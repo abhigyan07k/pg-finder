@@ -1,0 +1,179 @@
+.analytics-page {
+  min-height: 100vh;
+  padding: 110px 7% 50px;
+  background: #f8fafc;
+}
+
+.analytics-back-btn {
+  border: none;
+  background: #ffffff;
+  color: #1e293b;
+  padding: 10px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.analytics-hero {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.analytics-hero span {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.analytics-hero h1 {
+  margin: 8px 0;
+  font-size: 34px;
+}
+
+.analytics-hero p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.analytics-score-box {
+  background: rgba(255, 255, 255, 0.16);
+  padding: 22px;
+  border-radius: 20px;
+  text-align: center;
+  min-width: 180px;
+}
+
+.analytics-score-box h3 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.analytics-score-box p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.analytics-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.analytics-card svg {
+  font-size: 28px;
+  color: #2563eb;
+}
+
+.analytics-card h3 {
+  margin: 14px 0 4px;
+  font-size: 30px;
+  color: #0f172a;
+}
+
+.analytics-card p {
+  margin: 0;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.analytics-insights {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 18px;
+}
+
+.insight-card,
+.insight-note {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.insight-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.insight-card svg {
+  font-size: 34px;
+  color: #16a34a;
+}
+
+.insight-card h3 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.insight-card p,
+.insight-note p {
+  margin: 6px 0 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.insight-note h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.analytics-btn {
+  background: #7c3aed;
+  color: #ffffff;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .analytics-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .analytics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .analytics-insights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .analytics-page {
+    padding: 95px 16px 35px;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-hero h1 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,113 @@
+/* ===== PAGE ===== */
+.schedule-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.schedule-card {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* ===== BACK BUTTON ===== */
+.schedule-back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== HEADER ===== */
+.schedule-card h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.schedule-card p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* ===== FORM ===== */
+.schedule-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ===== LABEL ===== */
+.schedule-card label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===== INPUT ===== */
+.schedule-card input,
+.schedule-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* ===== INPUT FOCUS ===== */
+.schedule-card input:focus,
+.schedule-card textarea:focus {
+  border-color: #4f46e5;
+}
+
+/* ===== TEXTAREA ===== */
+.schedule-card textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.schedule-card button[type="submit"] {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.schedule-card button[type="submit"]:hover {
+  background: #4338ca;
+}
+
+/* ===== DISABLED ===== */
+.schedule-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+  .schedule-card {
+    padding: 20px;
+  }
+}
