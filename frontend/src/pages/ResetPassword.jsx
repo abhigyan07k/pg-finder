@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import api from "../services/api";
-import "../styles/auth.css";
+
 
 function ResetPassword() {
   const { state } = useLocation();
