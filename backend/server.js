@@ -18,10 +18,16 @@ const app = express();
 
 connectDB();
 
+// console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
+// console.log("allowedOrigins =", allowedOrigins);
+
 const allowedOrigins = [
   "http://localhost:5173",
   process.env.FRONTEND_URL,
 ];
+
+console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
+console.log("allowedOrigins =", allowedOrigins);
 
 app.use(
   cors({
