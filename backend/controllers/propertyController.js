@@ -1,10 +1,16 @@
 const Property = require("../models/Property");
 const User = require("../models/User");
 const Notification = require("../models/Notification");
+
 const getImageUrls = (req) => {
+  const baseUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.BACKEND_URL
+      : "http://localhost:8000";
+
   return req.files
     ? req.files.map(
-        (file) => `http://localhost:8000/uploads/properties/${file.filename}`,
+        (file) => `${baseUrl}/uploads/properties/${file.filename}`
       )
     : [];
 };
